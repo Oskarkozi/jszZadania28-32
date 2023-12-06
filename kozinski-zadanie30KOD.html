@@ -1,0 +1,40 @@
+
+<html>
+    <head>
+    <script type="text/javascript">
+    function okno_zamknij_siejka()
+    {
+    window.close()
+    }
+    21
+    </script>
+    </head>
+    <body>
+    <form> <textarea name="siejka" cols="80" rows="20" readonly> 
+        <html>
+            <head>
+            <script type="text/javascript">
+            var wiezowiec = {
+            pietra: '24 piętra',
+            kolor: 'szary',
+            cena: '2mil $',
+            obiekt_wyswietl_kozinski: function ()
+            {
+            document.write('ilosc pięter: ' + this.pietra + '<br> kolor: ' + this.kolor + '<br> wycena budynku: ' + this.cena)
+            }
+            }
+            wiezowiec.obiekt_wyswietl_kozinski();
+            </script>
+            </head>
+            <body>
+            <br>
+            Szary wieżowiec jest dość drogi
+            </body>
+            </html>
+    </textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/>
+    <script type="text/javascript">
+    </script>
+    </body>
+    </html>

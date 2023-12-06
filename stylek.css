@@ -1,0 +1,22 @@
+body {
+    background:            linear-gradient(lightblue, pink);
+    background-attachment: fixed; /*edit*/
+    margin: 0 auto;
+}
+
+.container {
+    display: block;
+    
+}
+.dane {
+    text-align: center;
+}
+.zadania {
+    text-align: center;
+}
+.kody {
+    text-align: center;
+}
+.pzadania{
+    display: inline-flex;
+}

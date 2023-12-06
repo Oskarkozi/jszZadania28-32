@@ -1,0 +1,44 @@
+<html>
+<head>
+<script type="text/javascript">
+function wiezowiec(pietra_k,kolor_k,cena_k,szyby_k)//początek konstruktora
+{
+this.pietra=pietra_k;
+this.kolor=kolor_k;
+this.cena=cena_k;
+this.szyby=szyby_k
+}//koniec konstruktora
+wiezowiec.prototype.wypisz = function () //definicja metody
+{
+alert(this.pietra + ' ' + this.kolor+ ' ' + this.cena+ ' ' + this.szyby);
+};
+var wiezowiec1 = new wiezowiec("43", "biały", "8 mil $","250"); // nowy obiekt osoba1
+var wiezowiec2 = new wiezowiec('22', 'niebieski', '3 mil $',"250");
+var wiezowiec3 = new wiezowiec('100', 'szary', '22 mil $',"250");
+wiezowiec1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1
+wiezowiec2.wypisz();
+wiezowiec3.wypisz();
+document.write("dostęp do właściwości"+"<br>");
+// poniżej dostęp do pól osoby1
+document.write("wieżowiec pierwszy"+" "+wiezowiec1.pietra+" "+wiezowiec1.kolor+" "+wiezowiec1.cena +"<br>");
+document.write("wieżowiec drugi"+" "+wiezowiec2.pietra+" "+wiezowiec2.kolor+" "+wiezowiec2.cena+"<br>");
+document.write("wieżowiec trzeci"+" "+wiezowiec3.pietra+" "+wiezowiec3.kolor+" "+wiezowiec3.cena+"<br>");
+
+var wiezowiec = {
+pietra: '24 piętra',
+kolor: 'szary',
+cena: '2mil $',
+obiekt_wyswietl_kozinski: function ()
+{
+    document.write('ilosc pięter: ' + this.pietra + '<br> kolor: ' + this.kolor + '<br> wycena budynku: ' + this.cena)
+}
+}
+
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe
+48
+</body>
+</html>
